@@ -1,2 +1,2 @@
 # ChainArt
-Non fungible token project
+Description cooming soon
