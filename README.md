@@ -7,7 +7,7 @@ An **OPENSOURCE** NonFungibleToken Project maded by two 15yrs teenagers from ita
  - [@OttoBapotto](https://github.com/ottobapotto8)
  - [@Reyon20](https://github.com/reyon20)
 
-![Logo](https://static.vecteezy.com/system/resources/previews/010/841/604/original/3d-illustration-hand-and-nft-png.png)
+![Logo](https://raw.githubusercontent.com/ottobapotto8/ChainArt/main/ChainArt/images/Main1.png)
 
 ## what do we want to do specifically
 
