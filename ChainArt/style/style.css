@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{background-color: rgb(0, 0, 0);}
+body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
 
 .nav{
     height: 80px;
@@ -98,10 +98,13 @@ body{background-color: rgb(0, 0, 0);}
     justify-content: center;
     align-items: center;
 }
+
 .card-container{
     display: flex;
+    flex-direction:row;
     gap: 50px;
 }
+
 .card-container-cards{
     padding: 150px 200px;
     border-radius: 15px;
@@ -115,29 +118,48 @@ body{background-color: rgb(0, 0, 0);}
     background-color: rgb(80, 65, 41);
     box-shadow: 0 8px 0 0 rgb(91, 91, 91);
 }
+@media (max-width: 1498px){
+    .card-container{
+        flex-direction:column;
+    }
+    .card{
+        margin-bottom: 203px;
+        margin-top: 310px;
+        height: 70vh;
+    }
+    .card-title{
+        padding-top: 82px;
+    }
+}
+@media (max-width: 750px){
+    .card-container-cards{
+        padding: 100px 100px;
+    }
+}
 .about{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 150vh;
+    height: 100vh;
     margin-top: -100px;
     color: #fff;
 }
 .about-card{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 800px;
     width: 1500px;
     justify-content: center;
     align-items: center;
     color: #fff;
     text-align: justify;
+    gap: 50px;
 }
-.about-card-content{
-    height: 400px;
-    width: 600px;
+.about-card-content {
+    height: 347px;
+    width: 536px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,23 +167,22 @@ body{background-color: rgb(0, 0, 0);}
     gap: 30px;
     border-radius: 20px;
     background: rgb(39, 36, 31);
-    box-shadow: 0 10px 30px -10px #fff;
+    box-shadow: 3px 10px 0 0 #fff;
     transition: all 0.3s ease-in-out;
-}.about-card-content:hover{box-shadow: 0 0 0 -0 #fff;}
+}.about-card-content:hover{box-shadow: 0 0 0 10px rgb(17, 182, 2);}
 .contenitore{
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 .box-logo {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 200px;
-    height: 240px;
-    margin-top: 22px;
-    margin-right: 20px;
+    width: auto;
+    height: auto;
     flex-direction: column;
-  }
+}
 .box-logo-icon{
     display: flex;
     gap: 20px;
@@ -184,4 +205,43 @@ body{background-color: rgb(0, 0, 0);}
     word-wrap: break-word;
     text-align: justify;
     line-height: 30px;
+}
+.spacer{
+    aspect-ratio: 920/300;
+    height: 680px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.layer1{
+    background-image: url('/images/wave-haikei.svg');
+}
+@media (max-width: 1140px){
+    .about-card{
+        flex-direction: column;
+    }
+}
+@media (max-width: 750px){
+    .about-card-content{
+        height: auto;
+        width: 295px;
+    }
+    .contenitore{
+        gap: 0;
+        flex-direction: column;
+    }
+    .about-card-content-info{
+        font-size: 22px;
+        width: 226px;
+        height: 400px;
+        height: 246px;
+        line-height: 22px;
+    }
+    .box-logo{
+        gap: 35px;
+    }
+    .about{
+        margin-bottom: 300px;
+    }
 }
