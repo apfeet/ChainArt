@@ -255,7 +255,7 @@ body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
 }
 .layer1{
     opacity: 0;
-    background-image: url('/images/wave-haikei.svg');
+    background-image: url('/ChainArt/ChainArt/images/wave-haikei.svg');
     animation: layer1 2s none;
     animation-fill-mode: forwards;
     animation-delay: 1.7s;
