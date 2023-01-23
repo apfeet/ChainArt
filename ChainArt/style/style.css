@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
+body{background-color: rgb(0, 0, 0);}
 
 .nav{
     height: 80px;
@@ -237,7 +237,7 @@ svg:hover #pol3{
     display: flex;
     flex-direction: row;
     height: 800px;
-    width: 1500px;
+    width: 1500px auto;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -366,13 +366,19 @@ svg:hover #pol3{
     justify-content: center;
     height: auto;
     width: auto;
+    width: auto;
     margin-bottom: 200px;
+}
+@media (max-width: 750px){
+    .white{
+        margin-top: 500px;
+    }
 }
 .white-paper{
     color: #fff;
     justify-content: center;
     text-align: center;
-    width: 1000px;
+    width: 1000px auto;
     font-size: 35px;
     height: auto;
     word-wrap: break-word;
