@@ -95,6 +95,7 @@ body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
 }
 
 .card-title{
+    justify-content: center;
     text-align: center;
     padding-top: 40px;
     font-weight: bold;
@@ -104,6 +105,9 @@ body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
     animation-fill-mode: forwards;
     opacity: 0;
     animation-delay: 0.5s;
+}
+.card-title-svg{
+    margin-top: 50px;
 }
 @keyframes card-title {
     0% { opacity: 0;margin-top: -100px;}
@@ -118,6 +122,41 @@ body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
     color: wheat;
     justify-content: center;
     align-items: center;
+}
+.poli{
+    rotate: 90deg;
+    width: 120px;
+}
+#pol{
+    cursor: pointer;
+}
+#pol1,#pol2,#pol3{
+    transition: all 1s ease;
+}
+
+#pol1{
+    fill: rgb(12, 196, 12);
+}
+#pol2{
+    fill: rgb(12, 112, 12);
+}
+#pol3{
+    fill: rgb(12, 112, 12);
+}
+
+
+#pol3{
+    transform: translateX(-100%);
+}
+svg:hover #pol1{
+    transform: translateX(20%);
+}
+svg:hover #pol2{
+    transform: translateX(20%);
+    opacity: 0;
+}
+svg:hover #pol3{
+    transform: translateX(0%);
 }
 
 .card-container{
@@ -143,8 +182,19 @@ body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
     animation-delay: 0.7s;
 }
 .card-container-cards:nth-child(1){
-    background: #cacaca;
-}
+    background: url("/ChainArt/ChainArt/images/2.png");
+    background-size: 80%;
+    background-position: 50px -80px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-blend-mode:overlay;
+    background-color: rgb(124, 124, 124);
+    cursor: pointer;
+    text-align: justify;
+    font-weight: bold;
+    color: #000;
+}.card-container-cards:nth-child(1):hover{color: #fff;background-color: rgb(53, 53, 53);font-size: 30px;}
 @keyframes card-container-cards1{
     0%{opacity: 0;margin-bottom: -100px;}
     100%{opacity: 1;margin-bottom: 10px;}
@@ -301,4 +351,29 @@ body{background-color: rgb(0, 0, 0);overflow-x: hidden;}
         margin-bottom: 300px;
         margin-top: 400px;
     }
+    .card-container-cards:nth-child(1){
+        background-position: 30px -30px;
+    }
+}
+
+.white{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: rgb(116, 60, 121);
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-bottom: 200px;
+}
+.white-paper{
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+    width: 1000px;
+    font-size: 35px;
+    height: auto;
+    word-wrap: break-word;
 }
