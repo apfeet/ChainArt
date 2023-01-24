@@ -2,6 +2,11 @@
 # ChainART
 
 An **OPENSOURCE** NonFungibleToken Project maded by two 15yrs teenagers from italy ;)
+
+OpenaseaLINKS
+
+- coming soon...
+
 ## HeadMasters
 
  - [@OttoBapotto](https://github.com/ottobapotto8)
