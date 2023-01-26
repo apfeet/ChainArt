@@ -5,6 +5,7 @@
     text-decoration: none;
     box-sizing: border-box;
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 body{background-color: rgb(0, 0, 0);}
 
@@ -23,7 +24,7 @@ body{background-color: rgb(0, 0, 0);}
 }
 .nav-container{
     width: 50%;
-    margin-left: 150px;
+    margin-left: 28px;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -168,6 +169,11 @@ svg:hover #pol3{
     animation-fill-mode: forwards;
     animation-delay: 0.7s;
 }
+.pp1:hover{
+    color: rgb(47, 255, 238);
+    text-decoration: underline;
+	text-decoration-color: rgb(38, 143, 0);
+}
 
 .card-container-cards{
     opacity: 0;
@@ -180,6 +186,13 @@ svg:hover #pol3{
     animation: card-container-cards1 2s none;
     animation-fill-mode: forwards;
     animation-delay: 0.7s;
+    color: #fff;
+}
+.card-container-cards a{
+    font-size: 20px;
+}
+li,a{
+    color: #fff;
 }
 .card-container-cards:nth-child(1){
     background: url("/ChainArt/ChainArt/images/2.png");
@@ -223,6 +236,9 @@ svg:hover #pol3{
         padding: 100px 100px;
     }
 }
+element {
+    scroll-behavior: smooth;
+}
 .about{
     margin-top: 100px;
     display: flex;
@@ -231,6 +247,7 @@ svg:hover #pol3{
     justify-content: center;
     height: 100vh;
     margin-top: -100px;
+    scroll-behavior: smooth;
     color: #fff;
 }
 .about-card{
@@ -243,7 +260,9 @@ svg:hover #pol3{
     color: #fff;
     text-align: justify;
     gap: 50px;
+    text-align: center;
 }
+
 .about-card-content {
     height: 347px;
     width: 536px;
@@ -375,11 +394,43 @@ svg:hover #pol3{
     }
 }
 .white-paper{
-    color: #fff;
+    position: relative;
+    color: #000;
     justify-content: center;
     text-align: center;
-    width: 1000px auto;
-    font-size: 35px;
+    width: 1500px;
+    font-size: 30px;
     height: auto;
     word-wrap: break-word;
+    letter-spacing: 1px;
+    line-height: 40px;
+}
+.white-paper::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.4);
+    background-size: cover;
+    background-position: center;
+    border-radius: 35px;
+    z-index: -1;
+}
+@media (max-width:1500px){
+    .white-paper{
+        width: auto;
+    }
+}
+@media (max-width:750px){
+    .white-paper{
+        font-size: 20px;
+        line-height: 20px;
+    }
+}
+.git{
+    color: greenyellow;
+    text-decoration: underline;
+	text-decoration-color: rgb(38, 143, 0);
 }
