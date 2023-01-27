@@ -427,6 +427,9 @@ element {
     .white-paper{
         font-size: 20px;
         line-height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 .git{
