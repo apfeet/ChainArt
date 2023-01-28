@@ -11,6 +11,8 @@ OpenaseaLINKS
 
  - [@OttoBapotto](https://github.com/ottobapotto8)
  - [@Reyon20](https://github.com/reyon20)
+ 
+ note: the project started html from scratch if you want to change it feel free to do it, peace and love ;)
 
 ![Logo](https://raw.githubusercontent.com/ottobapotto8/ChainArt/main/ChainArt/images/Main1.png)
 
