@@ -5,7 +5,7 @@ An **OPENSOURCE** NonFungibleToken Project maded by two 15yrs teenagers from ita
 
 OpenaseaLINKS
 
-- LemonChain (https://opensea.io/collection/lemonchains?search[sortAscending]=true&search[sortBy]=UNIT_PRICE)
+-[LemonChain](https://opensea.io/collection/lemonchains?search[sortAscending]=true&search[sortBy]=UNIT_PRICE)
 
 ## HeadMasters
 
